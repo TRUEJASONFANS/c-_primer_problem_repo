@@ -1,8 +1,8 @@
 #include <iostream>
 #include "MSharePtr.h"
 #include "template/debug.h"
-#include "memeory/UniquePtrTest.h"
-#include "memeory/Movie.h"
+#include "memory/UniquePtrTest.h"
+#include "memory/Movie.h"
 
 using namespace  std;
 int main() {
