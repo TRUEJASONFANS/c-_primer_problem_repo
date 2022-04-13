@@ -9,3 +9,5 @@ add_executable(c___primer_problems main.cpp MSharePtr.h template/debug.h memory/
 add_executable(Enable_if_test enable_if/enable_if.h enable_if/main.cpp)
 
 add_executable(MemoryTest memory/main.cpp)
+
+add_executable(memory_align memory_align/main.cpp)
