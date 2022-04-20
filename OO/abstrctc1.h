@@ -21,6 +21,9 @@ public:
         //std::cout <<"foo" << std::endl;
         a1->foo();
     }
+    void setAbstract(Sub1* p) {
+        a1 = p;
+    }
 };
 
 #endif //C___PRIMER_PROBLEMS_ABSTRCTC1_H
