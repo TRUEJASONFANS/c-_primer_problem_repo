@@ -4,7 +4,10 @@
 #include "memory/UniquePtrTest.h"
 #include "memory/Movie.h"
 
-using namespace  std;
+using std::string;
+using std::cout;
+using std::endl;
+
 int main() {
 
     MSharePtr<string> m1;

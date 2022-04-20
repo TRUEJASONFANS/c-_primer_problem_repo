@@ -5,7 +5,7 @@
 #include <iostream>
 #include <memory>
 #include "enable_if.h"
-using namespace  std;
+using  std::cout;
 int main() {
 
     int *p = new int(3);

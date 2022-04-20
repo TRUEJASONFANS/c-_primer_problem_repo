@@ -10,7 +10,9 @@
 #include <vector>
 #include <iostream>
 
-using namespace std;
+using std::string;
+using std::cout;
+
 class Tony {
 public:
     string GetFullName(){

@@ -4,7 +4,9 @@
 #include "abstrctc1.h"
 #include "instanceof.h"
 #include <iostream>
-using namespace  std;
+using std::cout;
+using std::endl;
+
 using namespace  OO::TEST;
 using namespace OO;
 
@@ -24,3 +26,4 @@ int main() {
     }
     return 0;
 }
+

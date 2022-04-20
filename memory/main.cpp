@@ -6,7 +6,8 @@
 #include <memory>
 #include <cassert>
 
-using namespace  std;
+using  std::cout;
+using std::string;
 int main() {
     auto nullPtr = std::unique_ptr<string>(nullptr);
     assert(nullPtr);

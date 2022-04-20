@@ -20,7 +20,10 @@ class C {
 };
 
 
-using namespace  std;
+using std::cout;
+using std::string;
+using std::endl;
+
 int main() {
     Dir d;
     cout << "Dir sizeof:" << sizeof(d) << endl;
