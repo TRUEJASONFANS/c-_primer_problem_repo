@@ -13,3 +13,5 @@ add_executable(MemoryTest memory/main.cpp)
 add_executable(memory_align memory_align/main.cpp)
 
 add_executable(ObjectOriented OO/main.cpp)
+
+add_executable(explict_demo explict/main.cpp)
