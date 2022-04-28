@@ -10,8 +10,10 @@ add_executable(Enable_if_test enable_if/enable_if.h enable_if/main.cpp)
 
 add_executable(MemoryTest memory/main.cpp)
 
-add_executable(memory_align memory_align/main.cpp)
+add_executable(memoryAlign memory_align/main.cpp)
 
 add_executable(ObjectOriented OO/main.cpp)
+
+add_executable(VirtualFunctionAddress OO/virtual_address/main.cpp)
 
 add_executable(explict_demo explict/main.cpp)
