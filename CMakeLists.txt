@@ -18,6 +18,7 @@ add_executable(VirtualFunctionAddress OO/virtual_address/main.cpp)
 
 add_executable(explict_demo explict/main.cpp)
 
+add_executable(function function/main.cpp)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -march=native")
 
