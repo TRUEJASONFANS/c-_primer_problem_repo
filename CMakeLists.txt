@@ -20,6 +20,8 @@ add_executable(explict_demo explict/main.cpp)
 
 add_executable(function function/main.cpp)
 
+add_executable(is_subclass_of template/is_sub_of/main.cpp template/is_sub_of/is_sub_class.h)
+
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -march=native")
 
 add_executable(avx avx/main.cpp)
