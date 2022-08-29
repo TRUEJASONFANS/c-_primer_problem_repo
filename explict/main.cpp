@@ -23,6 +23,14 @@ public:
         cout << "invoke move constructor" << endl;
     };
 
+    explicit X1(int a) {
+        cout<< "invoke int constructor" << endl;
+    }
+
+    explicit X1(long a) {
+        cout<< "invoke long constructor" << endl;
+    }
+
     X1& operator=(const X1 &obj) {
         cout << "invoke value assign constructor " << endl;
         if(this == &obj) {
@@ -51,7 +59,8 @@ public:
 int main() {
 //    X1 l1(1);
 //    X1 l3(2);
-    X1 l4 = X1();
+    int i = 1l;
+    X1 x(i);
 
     return 0;
 }

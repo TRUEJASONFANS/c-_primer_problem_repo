@@ -5,7 +5,7 @@
 using std::cout;
 using std::endl;
 
-struct IMyInterface
+struct Base
 {
     virtual void func1() = 0;
 
@@ -16,57 +16,44 @@ struct IMyInterface
     virtual void func4() = 0;
 };
 
-class S1 {
 
-public :
-    const int a = 1;
-};
 
-class CMyClass : public IMyInterface
+class A : public Base
 {
 public:
-    CMyClass() {
-    };
+    A() = default;;
 
-    virtual ~CMyClass() = default;
+    virtual ~A() = default;
 
-    virtual void func1() override {
+    void func1() override {
         cout << "func1" << endl;
     };
 
-    virtual void func2() override {
+    void func2() override {
         cout << "func2" << endl;
     };
 
-    virtual void func3() override {
+    void func3() override {
         cout << "func3" << endl;
     };
 
-    virtual void func4() override {
+    void func4() override {
         cout << "func4" << endl;
     };
-    static void f1(const ) {
-        return;
-    }
-    static CMyClass* s;
-    static CMyClass m;
-    int a = 1;
+
+
 };
 
-CMyClass* CMyClass::s = new CMyClass();
-CMyClass CMyClass::m;
 
-typedef void(*Fun)(void);
+typedef void(*Fun)();
 
 int main() {
-    cout << CMyClass::s->a << endl;
-    cout << CMyClass::m.a << endl;
-    IMyInterface * pObject = new CMyClass();
+
+    void* pObject = new A();
     Fun fp = nullptr;
 
     cout << "virtual function address" << &pObject << endl;
-    cout << "virtual function address" << (long*) *(long *) &pObject << endl;
-    cout << "virtual function address" << (long *) *(long *) &pObject << endl;
+    cout << "virtual function address" << reinterpret_cast<long*>(*static_cast<long*>(pObject)) << endl;
 
     for (int i= 0; i < 4; i++) {
         fp = (Fun)*((long *) *(long *) &pObject + i);

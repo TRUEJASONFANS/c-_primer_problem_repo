@@ -5,7 +5,6 @@ set(CMAKE_CXX_STANDARD 11)
 
 add_executable(c___primer_problems main.cpp MSharePtr.h template/debug.h memory/UniquePtrTest.cpp memory/UniquePtrTest.h memory/Movie.h enable_if/enable_if.h template/subTemplate.h)
 
-
 add_executable(Enable_if_test enable_if/enable_if.h enable_if/main.cpp)
 
 add_executable(MemoryTest memory/main.cpp)
@@ -27,6 +26,12 @@ add_executable(unsigned_char string/unsigned_char/main.cpp string/unsigned_char/
 add_executable(singleton OO/singleton/main.cpp)
 
 add_executable(LRUCache OO/LRUCache/main.cpp OO/LRUCache/LRUCache.h)
+
+add_executable(IO IO/ofstream.h IO/main.cpp)
+
+add_executable(Numerical numerical/main.cpp)
+
+add_executable(Constructor OO/constructor/main.cpp)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -march=native")
 
