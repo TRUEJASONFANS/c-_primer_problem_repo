@@ -18,6 +18,26 @@ add_executable(VirtualFunctionAddress OO/virtual_address/main.cpp)
 
 add_executable(explict_demo explict/main.cpp)
 
+add_executable(function function/main.cpp)
+
+add_executable(is_subclass_of template/is_sub_of/main.cpp template/is_sub_of/is_sub_class.h)
+
+add_executable(unsigned_char string/unsigned_char/main.cpp string/unsigned_char/unsigned_char.h)
+
+add_executable(singleton OO/singleton/main.cpp)
+
+add_executable(LRUCache OO/LRUCache/main.cpp OO/LRUCache/LRUCache.h)
+
+add_executable(IO IO/ofstream.h IO/main.cpp)
+
+add_executable(Numerical numerical/main.cpp)
+
+add_executable(Constructor OO/constructor/main.cpp)
+
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -march=native")
+
+add_executable(avx avx/main.cpp)
+
 add_executable(swap template/swap/main.cpp template/swap/Widget.h)
 
 add_executable(testMove template/move/TestTemplateConstructor.cpp)

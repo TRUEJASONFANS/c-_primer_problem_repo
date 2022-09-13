@@ -3,6 +3,7 @@
 //
 #include "abstrctc1.h"
 #include "instanceof.h"
+
 #include <iostream>
 using std::cout;
 using std::endl;
@@ -24,6 +25,7 @@ int main() {
     if(instanceof<GaugeGroup>(g2)) {
         std::cout << "g2 is a gaugegroup class" << endl;
     }
+
     return 0;
 }
 
