@@ -3,7 +3,8 @@ project(c___primer_problems)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(c___primer_problems main.cpp MSharePtr.h template/debug.h memory/UniquePtrTest.cpp memory/UniquePtrTest.h memory/Movie.h enable_if/enable_if.h template/subTemplate.h)
+add_executable(c___primer_problems main.cpp MSharePtr.h template/debug.h memory/UniquePtrTest.cpp memory/UniquePtrTest.h memory/Movie.h enable_if/enable_if.h)
+
 
 add_executable(Enable_if_test enable_if/enable_if.h enable_if/main.cpp)
 
@@ -39,3 +40,7 @@ add_executable(VirtualOverride OO/polymophic/virtualoverride/main.cpp)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -march=native")
 
 add_executable(avx avx/main.cpp)
+
+add_executable(swap template/swap/main.cpp template/swap/Widget.h)
+
+add_executable(testMove template/move/TestTemplateConstructor.cpp)
