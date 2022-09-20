@@ -33,6 +33,9 @@ add_executable(Numerical numerical/main.cpp)
 
 add_executable(Constructor OO/constructor/main.cpp)
 
+add_executable(VirtualOverride OO/polymophic/virtualoverride/main.cpp)
+
+
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -march=native")
 
 add_executable(avx avx/main.cpp)
