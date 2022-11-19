@@ -2,7 +2,7 @@
 // Created by zhxie on 5/17/2022.
 //
 
-#include "is_sub_class.h"
+#include "isSubClass.h"
 #include <iostream>
 
 // An extendable class
