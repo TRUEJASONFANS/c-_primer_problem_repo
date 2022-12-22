@@ -24,4 +24,20 @@ public:
 private:
     std::string last_name_;
 };
+
+
+int asRef(std::unique_ptr<int>& p)
+{
+    (*p)++;
+    return *p;
+}
+
+int asOwner(std::unique_ptr<int> p)
+{
+    (*p)++;
+   return *p;
+}
+
+
+
 #endif //C___PRIMER_PROBLEMS_UNIQUEPTRTEST_H
