@@ -36,11 +36,17 @@ add_executable(Constructor OO/constructor/main.cpp)
 
 add_executable(VirtualOverride OO/polymophic/virtualoverride/main.cpp)
 
+add_executable(swap template/swap/main.cpp template/swap/Widget.h)
+
+add_executable(private_acess template/private_access/main.cpp)
+
+add_executable(testMove template/move/TestTemplateConstructor.cpp)
+
+add_executable(compile_time_type_detection string/compile_time_detection/main.cpp)
+
+add_executable(performance_insert_vs_emplace performance/main.cpp)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -march=native")
 
 add_executable(avx avx/main.cpp)
 
-add_executable(swap template/swap/main.cpp template/swap/Widget.h)
-
-add_executable(testMove template/move/TestTemplateConstructor.cpp)
