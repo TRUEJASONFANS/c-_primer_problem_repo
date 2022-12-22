@@ -30,10 +30,10 @@ function valid_no_borders(t)
 end
 
 local function testSequence(s)
-    local border = 0
+    local borders = 0
     if s[1] ~= nil then
         for index in pairs(s) do
-            if natural_index(index) and t[index + 1] == nil then
+            if natural_index(index) and s[index + 1] == nil then
                 borders = borders + 1
                 if borders > 1 then
                     break
@@ -43,3 +43,5 @@ local function testSequence(s)
     end
     return borders == 1 or valid_no_borders(t) and borders == 0
 end
+
+print (testSequence({[1]="2",  w ="ww"}))
