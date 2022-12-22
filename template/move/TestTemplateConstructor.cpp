@@ -6,7 +6,10 @@
 #include "TestTemplateConstructor.h"
 
 int main() {
-    B b;
+    B b(2);
     A a(b);
+
+    B && b1 =  B(1);
+
 
 }
