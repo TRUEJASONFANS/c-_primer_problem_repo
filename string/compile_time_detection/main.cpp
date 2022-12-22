@@ -87,8 +87,6 @@ void PrintHelper<LAST_INDEX>::doPrint<0>() {
 
 int main() {
 
-    constexpr const char *name = "name";
-    std::cout << strings_equal("name1", name) << std::endl;
     PrintHelper<>();
 
     return 0;
