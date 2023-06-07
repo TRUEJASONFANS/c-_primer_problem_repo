@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.20)
 project(c___primer_problems)
 
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 17)
 
 add_executable(c___primer_problems main.cpp MSharePtr.h template/debug.h memory/UniquePtrTest.cpp memory/UniquePtrTest.h memory/Movie.h enableIf/enable_if.h)
 
@@ -18,7 +18,7 @@ add_executable(VirtualFunctionAddress OO/virtualAddress/main.cpp)
 
 add_executable(explict_demo explict/main.cpp)
 
-add_executable(function function/main.cpp)
+add_executable(function function/main.cpp function/stdvisit.h)
 
 add_executable(is_subclass_of template/isSubOf/main.cpp template/isSubOf/isSubClass.h)
 
@@ -45,6 +45,8 @@ add_executable(testMove template/move/TestTemplateConstructor.cpp)
 add_executable(compile_time_type_detection string/compile_time_detection/main.cpp)
 
 add_executable(performance_insert_vs_emplace performance/main.cpp)
+
+add_executable(double_issue_study double/main.cpp)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -march=native")
 
