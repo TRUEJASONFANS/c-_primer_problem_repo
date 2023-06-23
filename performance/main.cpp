@@ -6,7 +6,7 @@
 #include <chrono>
 #include <iostream>
 #include <cassert>
-#include "main.h"
+
 using namespace std;
 
 int main() {

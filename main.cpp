@@ -1,7 +1,6 @@
 #include <iostream>
 #include "MSharePtr.h"
 #include "template/debug.h"
-#include "memory/UniquePtrTest.h"
 #include "memory/Movie.h"
 
 using std::string;

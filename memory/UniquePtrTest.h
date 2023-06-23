@@ -32,7 +32,7 @@ int asRef(std::unique_ptr<int>& p)
     return *p;
 }
 
-int asOwner(std::unique_ptr<int> p)
+int asOwner(std::unique_ptr<int> &&p)
 {
     (*p)++;
    return *p;
