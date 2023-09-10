@@ -51,7 +51,7 @@ private:
 };
 
 // A tag type for A::x.  Each distinct private member you need to
-// access should have its own tag.  Each tag should contain a
+// access should have its own tag.  Each tag should container a
 // nested ::type that is the corresponding pointer-to-member type.
 struct A_x { typedef char const*(A::*type); };
 
