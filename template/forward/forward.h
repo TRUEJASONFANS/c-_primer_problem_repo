@@ -10,15 +10,7 @@
 class forward {
 
 public:
-    void process(int& value) {
-        value = 3;
-        std::cout << "Lvalue reference: " << value << std::endl;
-        std::cout << &value;
-    }
 
-    void process(int&& value) {
-        std::cout << "Rvalue reference: " << value << std::endl;
-    }
 
     template<typename T>
     void wrapper(T&& arg) {
@@ -28,6 +20,16 @@ public:
         process(std::forward<T>(arg));
     }
 
+
+    void process(int& value) {
+        value = 3;
+        std::cout << "Lvalue reference: " << value << std::endl;
+        std::cout << &value << std::endl;
+    }
+
+    void process(int&& value) {
+        std::cout << "Rvalue reference: " << value << std::endl;
+    }
 
 };
 
